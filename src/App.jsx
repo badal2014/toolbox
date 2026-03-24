@@ -218,10 +218,11 @@ function JSONFixer() {
 
   const fixJSON = () => {
     try {
-      const parsed = JSON.parse(input)
+      // Convert single quotes to double quotes for valid JSON parsing
+      const doubleQuoteInput = input.replace(/'/g, '"')
+      const parsed = JSON.parse(doubleQuoteInput)
       const fixed = JSON.stringify(parsed, null, 2)
-      const singleQuoteFixed = fixed.replace(/"/g, "'")
-      setOutput(singleQuoteFixed)
+      setOutput(fixed)
     } catch (error) {
       setOutput(`Error: ${error.message}`)
     }
