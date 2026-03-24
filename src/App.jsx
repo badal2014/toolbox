@@ -220,7 +220,8 @@ function JSONFixer() {
     try {
       const parsed = JSON.parse(input)
       const fixed = JSON.stringify(parsed, null, 2)
-      setOutput(fixed)
+      const singleQuoteFixed = fixed.replace(/"/g, "'")
+      setOutput(singleQuoteFixed)
     } catch (error) {
       setOutput(`Error: ${error.message}`)
     }
