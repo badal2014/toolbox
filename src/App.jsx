@@ -26,7 +26,7 @@ function Home() {
   return (
     <div className="home">
       <div className="container">
-        <h2>Welcome to ToolBox</h2>
+        <h2>Welcome to TOOLBOX AI</h2>
         <p>Select a tool from the navigation above to get started.</p>
         <div className="tool-grid">
           <Link to="/bill-generator" className="tool-card">
@@ -56,7 +56,7 @@ function Header() {
     <header>
       <div className="container">
         <Link to="/" className="logo">
-          <h1>ToolBox</h1>
+          <h1>TOOLBOX AI</h1>
         </Link>
         <nav>
           <ul>
@@ -288,7 +288,7 @@ function Footer() {
   return (
     <footer>
       <div className="container">
-        <p>&copy; 2026 ToolBox. All rights reserved.</p>
+        <p>&copy; 2026 TOOLBOX AI. All rights reserved.</p>
         <p>Professional tools for your needs.</p>
       </div>
     </footer>
