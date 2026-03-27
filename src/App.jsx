@@ -83,9 +83,9 @@ function Header({ toggleTheme, darkMode }) {
             <li><NavLink to="/password-generator">Password Generator</NavLink></li>
             <li><NavLink to="/json-fixer">JSON Fixer</NavLink></li>
             <li><NavLink to="/json-viewer">JSON Viewer</NavLink></li>
-            <li><NavLink to="/html-viewer">HTML Viewer</NavLink></li>
+            {/* <li><NavLink to="/html-viewer">HTML Viewer</NavLink></li>
             <li><NavLink to="/html-editor">HTML Editor</NavLink></li>
-            <li><NavLink to="/exam-generator">Exam Generator</NavLink></li>
+            <li><NavLink to="/exam-generator">Exam Generator</NavLink></li> */}
             <li>
               <button onClick={toggleTheme} className="theme-toggle-btn">
                 {darkMode ? 'Light' : 'Dark'}
