@@ -343,7 +343,7 @@ function BillGenerator() {
   return (
     <section className="tool-section bill-section">
       <div className="container">
-        <h2>Bill Generator</h2>
+
         <div className="bill-type-grid">
           {BILL_TYPES.map(bt => (
             <button
@@ -467,7 +467,7 @@ function PasswordGenerator() {
   return (
     <section className="tool-section pw-section">
       <div className="container">
-        <h2>Password Generator</h2>
+
 
         <div className="pw-output-box">
           <span className={`pw-password ${password ? '' : 'pw-placeholder'}`}>
@@ -612,7 +612,7 @@ function JSONFixer() {
   return (
     <section className="tool-section json-viewer-section">
       <div className="container">
-        <h2>JSON Fixer</h2>
+
         <div className="jv-split-panel">
           <div className="jv-editor-wrap">
             <div className="jv-editor-toolbar">
@@ -700,7 +700,6 @@ function JSONViewer() {
   return (
     <section className="tool-section json-viewer-section">
       <div className="container">
-        <h2>JSON Viewer</h2>
         <div className="jv-split-panel">
           <div className="jv-editor-wrap">
             <div className="jv-editor-toolbar">
@@ -898,7 +897,7 @@ function HTMLEditor() {
   return (
     <section className="tool-section he-section">
       <div className="container">
-        <h2>HTML Editor</h2>
+
         <div className="he-toolbar">
           <button
             onClick={toggleSource}
@@ -1191,7 +1190,7 @@ ${body}
   return (
     <section className="tool-section eg-section">
       <div className="container">
-        <h2>Exam Generator</h2>
+
 
         {step === 'upload' && (
           <div className="eg-upload-step">
