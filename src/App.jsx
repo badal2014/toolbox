@@ -578,8 +578,14 @@ function JSONFixer() {
       return
     }
     try {
-      const doubleQuoteInput = value.replace(/'/g, '"')
-      const parsed = JSON.parse(doubleQuoteInput)
+      const fixed = value
+        .replace(/'/g, '"')
+        .replace(/(?<!")True(?!")/g, 'true')
+        .replace(/(?<!")TRUE(?!")/g, 'true')
+        .replace(/(?<!")False(?!")/g, 'false')
+        .replace(/(?<!")FALSE(?!")/g, 'false')
+        .replace(/(?<!")None(?!")/g, 'null')
+      const parsed = JSON.parse(fixed)
       setOutput(JSON.stringify(parsed))
       setError('')
     } catch (err) {
